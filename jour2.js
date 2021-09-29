@@ -140,11 +140,66 @@ switch (month) {
     //console.log(num)     - 1.5    1.4
     //console.log(rounded) - 2      1
 
-var roundedNumber = 12.5
 
 
-if(roundedNumber + 0.5 >= Math.floor(roundedNumber) + 1){
-  console.log(Math.ceil(roundedNumber))
+    // var roundedNumber = 3.5
+
+    // if(roundedNumber + 0.5 >= Math.floor(roundedNumber) + 1){
+    //   console.log(Math.ceil(roundedNumber))
+    // } else {
+    //   console.log(Math.floor(roundedNumber))
+    // }
+
+
+
+    // if(roundedNumber - 0.4 >= Math.floor(roundedNumber)){
+    //   console.log(Math.ceil(roundedNumber))
+    // } else {
+    //   console.log(Math.floor(roundedNumber))
+    // }
+
+
+
+    // var roundedNumber = 13.6
+    // var mathCeil = Math.ceil(roundedNumber)
+    // var mathFloor = Math.floor(roundedNumber)
+    // var result = mathCeil - roundedNumber
+
+    // if (result <= 0.5) {
+    //   console.log(mathCeil)
+    // } else {
+    //   console.log(mathFloor)
+    // }
+
+
+    // var rNumber = 3.4;
+    // var numberCeil = Math.ceil(rNumber) - rNumber;
+
+    // console.log(numberCeil);
+
+    // if(numberCeil <= 0.5){
+    //     console.log(Math.ceil(rNumber));
+    // }
+    // else{
+    //     console.log(Math.floor(rNumber));
+    // }
+
+
+    var roundedNumber = 12.4
+
+    if (roundedNumber % 1 >= 0.5) {
+      console.log(Math.ceil(roundedNumber))
+    } else {
+      console.log(Math.floor(roundedNumber))
+    }
+
+
+roundedNumber = roundedNumber.toString ()
+
+// console.log(roundedNumber)
+
+if(roundedNumber.substring(2) >= 5){
+  console.log(roundedNumber.substring(0, 1).replace("3", "4"))
 } else {
-  console.log(Math.floor(roundedNumber))
+  console.log(roundedNumber.substring(0, 1))
 }
